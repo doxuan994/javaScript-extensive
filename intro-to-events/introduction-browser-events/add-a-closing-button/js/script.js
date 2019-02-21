@@ -1,0 +1,14 @@
+"use strict";
+
+
+window.onload = function() {
+
+    let panes = document.querySelectorAll('.pane');
+
+    for (let pane of panes) {
+        pane.insertAdjacentHTML("afterbegin", '<button class="remove-button">[x]</button>');
+        // pane.firstChild.onclick, when button is clicked.
+        pane.firstChild.onclick = () => pane.remove();
+    }
+
+}
