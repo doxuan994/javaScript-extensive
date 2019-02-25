@@ -9,7 +9,11 @@ window.onload = function() {
         let target = event.target;
 
         // If we have tooltip HTML...
+        // target.dataset.tooltip returns content of the tooltip.
+        // This only works for the element has one toolti and not for nested
+        // tooltips.
         let tooltipHtml = target.dataset.tooltip;
+        // console.log(target.dataset.tooltip);
         if (!tooltipHtml) return; // no tooltip
 
         // ...create the tooltip element

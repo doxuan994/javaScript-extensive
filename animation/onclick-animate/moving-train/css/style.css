@@ -1,0 +1,15 @@
+.train {
+    position: relative;
+    cursor: pointer;
+    width: 177px;
+    height: 160px;
+    left: 0;
+    /* transition: left 5s cubic-bezier(0, 0, 1, 1); */
+
+    /* transition: left 5s cubic-bezier(0, .5, .5, 1); */
+
+    /* transition: left 5s ease-out; */
+
+    /* A Bezier curve can make the animation “jump out” of its range. */
+    transition: left 5s cubic-bezier(.5, -1, .5, 2);
+}
